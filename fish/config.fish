@@ -161,3 +161,8 @@ function ls --wraps exa
     exa $argv
 end
 
+# Enable tmux by default
+if status --is-interactive
+	tmux ^ /dev/null; and exec true
+end
+
