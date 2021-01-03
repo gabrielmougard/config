@@ -1,13 +1,11 @@
 # Config
 
-![](terminal.png)
-Fish + Alacritty + Base16 Theme
-![](nvim-welcome.png)
-Neovim + Base16 Theme + many plugins (system programming semantic syntax highlighting) +  keymaps
+![](config-example.png)
 
 This is my personal config. I use :
 
 * Alacritty (blazing fast GPU-accelerated terminal emulator written in pure Rust)
 * Fish (modern shell)
 * tmux (terminal mutliplexer)
-* Neovim (editor)
+* Neovim (editor) + my personnal plugins and hotkeys configurations
+* Base16 atelier-dune colorscheme
