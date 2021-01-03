@@ -1,6 +1,6 @@
 " Fish doesn't play all that well with others
 set shell=/bin/bash
-let mapleader = "\<Space>"
+let mapleader = ","
 
 " =============================================================================
 " # PLUGINS
@@ -18,6 +18,7 @@ Plug 'mhinz/vim-startify'
 Plug 'ciaranm/securemodelines'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'justinmk/vim-sneak'
+Plug 'tmux-plugins/vim-tmux-focus-events'
 
 " GUI enhancements
 Plug 'Soares/base16.nvim'
@@ -142,7 +143,14 @@ set shortmess+=c " don't give |ins-completion-menu| messages.
 " Verbose: set listchars=nbsp:¬,eol:¶,extends:»,precedes:«,trail:•
 set listchars=nbsp:¬,extends:»,precedes:«,trail:•
 
-
+" =============================================================================
+" # Keyboard shortcuts
+" =============================================================================
+" Neat X clipboard integration
+" ,p will paste clipboard into buffer
+" ,c will copy entire buffer into clipboard
+noremap <leader>p :r !pbpaste
+noremap <leader>c :w !pbcopy
 
 " =============================================================================
 " # Footer
